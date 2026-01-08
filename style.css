@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  height: 100vh;
+  background: linear-gradient(135deg, #7a0c0c, #b11212);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  overflow: hidden;
+}
+
+.container {
+  text-align: center;
+  background: rgba(0, 0, 0, 0.35);
+  padding: 40px;
+  border-radius: 20px;
+  z-index: 2;
+}
+
+h1 {
+  font-size: 32px;
+  margin-bottom: 15px;
+}
+
+#countdown {
+  font-size: 26px;
+  margin-bottom: 20px;
+}
+
+button {
+  padding: 12px 25px;
+  font-size: 18px;
+  border: none;
+  border-radius: 10px;
+  cursor: not-allowed;
+  background: gray;
+  color: white;
+}
+
+button.active {
+  background: #ff4d4d;
+  cursor: pointer;
+}
+
+#message {
+  margin-top: 25px;
+  font-size: 20px;
+  white-space: pre-line;
+}
+
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+}
